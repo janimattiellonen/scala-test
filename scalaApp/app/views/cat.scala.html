@@ -1,0 +1,14 @@
+@(message: String, catForm: Form[Cat])
+
+@import helper._
+
+@main("New cat") {
+	
+	<h1>Add a new cat</h1>
+	
+    @form(routes.Application.createCat()) {
+		@inputText(catForm("name"))
+		@inputText(catForm("url"))
+		<input type="submit" value="Add cat" />
+	}
+}

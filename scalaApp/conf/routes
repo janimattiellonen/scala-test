@@ -7,3 +7,12 @@ GET     /                           controllers.Application.index
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+
+
+
+#cat routes
+GET   /cats/new					controllers.Application.newCat
+GET   /cats						controllers.Application.cats
+POST   /cats/save				controllers.Application.createCat
+

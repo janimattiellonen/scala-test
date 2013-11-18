@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS cats_db;
+USE cats_db;
+CREATE TABLE IF NOT EXISTS `cats` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
